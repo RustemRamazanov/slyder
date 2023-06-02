@@ -35,21 +35,35 @@ body {
   align-items: center;
   justify-content: center;
   color: #fff;
+  padding: 30px;
 }
 
 .sidebar h1 {
   font-size: 40px;
-  margin-bottom: 20px;
-  padding: 20px 20px;
+  margin-bottom: 30px;
+  padding: 20px 40px;
   margin-top: -30px;
   color: black;
 }
 .sidebar p {
   font-size: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
   margin-top: -30px;
   color: black;
   padding: 10px 20px;
+}
+
+@media (max-width: 840px){
+  .sidebar h1{
+    font-size: 20px;
+    text-align: center;
+   }
+}
+@media (max-width: 840px){
+  .sidebar p{
+    font-size: 14px;
+    text-align: center;
+   }
 }
 
 .main-slide {
@@ -91,6 +105,14 @@ button:focus {
   left: 35%;
   top: 50%;
   z-index: 100;
+}
+@media (max-width: 840px){
+  .container .controls button{
+    position: absolute;
+    left: 35%;
+    top: 85%;
+    z-index: 100;
+   }
 }
 
 .container .controls .down-button {
